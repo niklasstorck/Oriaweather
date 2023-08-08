@@ -2,10 +2,11 @@ program OriaWeather;
 
 uses
   Vcl.Forms,
-  Main in 'Main.pas' {MainForm} ,
-  Setup in 'Setup.pas' {Setupform} ,
+  Main in 'Main.pas' {MainForm},
+  Setup in 'Setup.pas' {Setupform},
   Vcl.Themes,
-  Vcl.Styles;
+  Vcl.Styles,
+  InformationScreen in 'InformationScreen.pas' {Info};
 
 {$R *.res}
 
@@ -15,6 +16,7 @@ begin
   Application.Title := 'Oriaweather';
   Application.CreateForm(TMainForm, MainForm);
   Application.CreateForm(TSetupForm, SetupForm);
+  Application.CreateForm(TInfo, Info);
   Application.Run;
 
 end.

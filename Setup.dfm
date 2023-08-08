@@ -3,27 +3,27 @@ object SetupForm: TSetupForm
   Top = 0
   Hint = 'H'#246'gerklicka f'#246'r inst'#228'llningar'
   Caption = 'Inst'#228'llningar'
-  ClientHeight = 367
-  ClientWidth = 471
+  ClientHeight = 366
+  ClientWidth = 467
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   OnActivate = FormActivate
-  PixelsPerInch = 96
   TextHeight = 13
   object Bevel1: TBevel
     AlignWithMargins = True
     Left = 3
     Top = 3
-    Width = 465
-    Height = 361
+    Width = 461
+    Height = 360
     Align = alClient
     ExplicitLeft = 8
     ExplicitTop = -2
+    ExplicitWidth = 465
+    ExplicitHeight = 361
   end
   object Label4: TLabel
     Left = 24

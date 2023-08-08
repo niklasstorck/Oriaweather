@@ -83,7 +83,8 @@ begin
   MainForm.WeatherFilename := EditWeatherFilename.Text;
   MainForm.SaveWeather := CheckBoxWD.Checked;
   MainForm.UpdateSeconds := StrToInt(EditSecondsUpdate.Text);
-  // Lägg till test av validitet.
+  MainForm.WriteSettings;
+  // Lägg ev. till test av validitet.
   // Komma ersätts av punkt t.ex
   Close
 end;

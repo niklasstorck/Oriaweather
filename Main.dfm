@@ -14,11 +14,9 @@ object MainForm: TMainForm
   Font.Style = []
   GlassFrame.Enabled = True
   GlassFrame.SheetOfGlass = True
-  OldCreateOrder = False
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 13
   object Memo1: TMemo
     Left = 0
@@ -39,6 +37,8 @@ object MainForm: TMainForm
     PopupMenu = PopupMenu1
     ShowHint = True
     TabOrder = 0
+    ExplicitWidth = 333
+    ExplicitHeight = 204
   end
   object Timer1: TTimer
     Interval = 15000
@@ -50,8 +50,12 @@ object MainForm: TMainForm
     Left = 120
     Top = 72
     object Instllningar1: TMenuItem
-      Caption = 'Inst'#228'llningar'
+      Caption = '&Inst'#228'llningar'
       OnClick = SettingsClick
+    end
+    object Readme1: TMenuItem
+      Caption = '&Read me'
+      OnClick = Readme1Click
     end
   end
 end
