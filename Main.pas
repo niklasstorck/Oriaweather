@@ -305,6 +305,7 @@ procedure TMainForm.WriteSettings;
 var
         Inifile: TInifile;
 begin
+  try
         // Write settings from inifile
         Inifile := TInifile.Create(ChangeFileExt(Application.ExeName, '.ini'));
         Inifile.WriteString('Settings', 'RoofFile', RoofFileName);
@@ -321,6 +322,9 @@ begin
         // från programet. NI 2023-07-27
         Inifile.WriteInteger('Logging', 'LogLevel', LogLevel);
         Inifile.Destroy;
+  except
+        WriteLogFile('Kan inte skriva inifilen!', 1)
+  end;
 end;
 
 function TMainForm.Roofopen(FN: String): Boolean;
@@ -389,7 +393,7 @@ begin
         S := S + Separator;
         S := S + windspeed + Separator + windgust + Separator + winddirection +
           Separator + BooltoStr(OK, true);
-
+        try
         if FileExists(WeatherFilename) then
         begin
                 // Adds a line to the file
@@ -418,6 +422,9 @@ begin
                 // Recursiv call of this function the first time it
                 // creates the file. Now it exists.
                 SaveWeatherData;
+        end;
+        except
+               WriteLogFile('Kan inte skriva väderdata!', 1)
         end;
 end;
 
