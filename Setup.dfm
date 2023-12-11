@@ -11,7 +11,9 @@ object SetupForm: TSetupForm
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  OldCreateOrder = True
   OnActivate = FormActivate
+  PixelsPerInch = 96
   TextHeight = 13
   object Bevel1: TBevel
     AlignWithMargins = True
@@ -196,9 +198,17 @@ object SetupForm: TSetupForm
     TabOrder = 10
     Text = '15'
   end
+  object IgnoreRoofFileCheckbox: TCheckBox
+    Left = 24
+    Top = 51
+    Width = 97
+    Height = 17
+    Caption = '&Ignorera takfilen'
+    TabOrder = 11
+  end
   object OpenTextFileDialog1: TOpenTextFileDialog
-    Left = 216
-    Top = 56
+    Left = 368
+    Top = 80
   end
   object OpenTextFileDialog2: TOpenTextFileDialog
     Left = 376
