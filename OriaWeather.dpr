@@ -1,22 +1,23 @@
-program OriaWeather;
+program Oriaweather;
+
+
+
+{$R *.dres}
 
 uses
   Vcl.Forms,
-  Main in 'Main.pas' {MainForm},
-  Setup in 'Setup.pas' {Setupform},
-  Vcl.Themes,
-  Vcl.Styles,
-  InformationScreen in 'InformationScreen.pas' {Info};
+  Main in 'Main.pas' {Mainform},
+  Setup in 'Setup.pas',
+  WUnit in 'WUnit.pas',
+  InformationScreen in 'InformationScreen.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.Title := 'Oriaweather';
-  Application.CreateForm(TMainForm, MainForm);
-  Application.CreateForm(TSetupForm, SetupForm);
+  Application.CreateForm(TMainform, Mainform);
+  Application.CreateForm(TSetupform, Setupform);
   Application.CreateForm(TInfo, Info);
   Application.Run;
-
 end.

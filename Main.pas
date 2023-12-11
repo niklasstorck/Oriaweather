@@ -329,7 +329,7 @@ begin
     Inifile.WriteInteger('Settings', 'UppdateSec', UpdateSeconds);
 
     Inifile.WriteInteger('Place', 'Top', MainForm.Top);
-    Inifile.WriteInteger('Place', 'Left', MainForm.Height);
+    Inifile.WriteInteger('Place', 'Left', MainForm.Left);
     Inifile.WriteInteger('Place', 'Width', MainForm.Width);
     IniFile.WriteInteger('Place', 'Height', MainForm.Height);
 
