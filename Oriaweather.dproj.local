@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.141,=D:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.215,D:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.pas=Y:\Oria\Väder\Oriaweather2\Oriaweather.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.085,=C:\Users\nikla\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.931,=D:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.356,=V:\Oria\Väder\Oriaweather2\New1.txt</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.401,=Y:\Oria\Väder\Oriaweather2\InformationScreen.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.558,=V:\Oria\Väder\Oriaweather2\OriaWeather_Icon.ico</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.445,=Y:\Oria\Väder\Oriaweather2\Main.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.679,=Y:\Oria\Väder\Oriaweather2\WUnit.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.695,=Y:\Oria\Väder\Oriaweather2\Setup.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.215,D:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm=Y:\Oria\Väder\Oriaweather2\Oriaweather.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.336,D:\Onedrive\Documents\Embarcadero\Studio\Projects\Project2.dproj=Y:\Oria\Väder\Oriaweather2\Oriaweather.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.616,=F:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.059,=F:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.527,=F:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.304,=F:\Onedrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

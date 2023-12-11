@@ -31,6 +31,7 @@ type
     CheckBoxWD: TCheckBox;
     Label6: TLabel;
     EditSecondsUpdate: TEdit;
+    IgnoreRoofFileCheckbox: TCheckBox;
     procedure ButtonChooseFileClick(Sender: TObject);
     procedure ButtonOKClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
@@ -83,6 +84,7 @@ begin
   MainForm.WeatherFilename := EditWeatherFilename.Text;
   MainForm.SaveWeather := CheckBoxWD.Checked;
   MainForm.UpdateSeconds := StrToInt(EditSecondsUpdate.Text);
+  MainForm.IgnoreRoofFile  := IgnoreRoofFileCheckbox.Checked;
   MainForm.WriteSettings;
   // Lägg ev. till test av validitet.
   // Komma ersätts av punkt t.ex
@@ -91,6 +93,7 @@ end;
 
 procedure TSetupForm.FormActivate(Sender: TObject);
 begin
+  IgnoreRoofFileCheckbox.Checked := MainForm.IgnoreRoofFile;
   EditLong.Text := MainForm.Longitude;
   EditLat.Text := MainForm.Latitude;
   EditWind.Text := MainForm.MaxWindSpeed;

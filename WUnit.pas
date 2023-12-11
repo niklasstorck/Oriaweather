@@ -3,6 +3,7 @@ unit WUnit;
 interface
 
 uses
+  System.Generics.Collections,
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Net.HttpClientComponent, System.Net.URLClient,
   System.Net.HttpClient, Vcl.StdCtrls, System.JSON;
@@ -25,22 +26,6 @@ type
     { Public declarations }
   end;
 
-  TWeather = class
-    City,
-    clouds,
-    windspeed,
-    rain,
-    winddirection: String;
-    Temperature,
-    Longitude,
-    Latitude: Double;
-
-    procedure GetWeather;
-  private
-    { Private declarations }
-  public
-    { Public declarations }
-  end;
 
 
 
